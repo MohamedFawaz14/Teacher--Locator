@@ -1,0 +1,22 @@
+<h1>All Teachers!</h1>
+
+<% teachers.forEach(teacher => { %>
+    <h2><%= teacher.name %></h2>
+    <%
+    const teacherTimeTable = timeTable.find(t => t.teacher == teacher.id) 
+    %>
+
+    <% if(teacherTimeTable) { %>
+       <h5>Day 1 period 1:<%= teacherTimeTable.day1period1 %></h5>
+       <h5>Day 1 period 2:<%= teacherTimeTable.day1period2 %></h5>
+       <h5>Day 2 period 1:<%= teacherTimeTable.day2period1 %></h5>
+       <h5>Day 2 period 2:<%= teacherTimeTable.day2period2 %></h5>
+<% } else{%>
+    <p>Time Table not Assigned..</p>
+    <%}%>
+<% }) %>
+
+
+ 
+<br><a href="/">back to Home page</a>
+

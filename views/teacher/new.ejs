@@ -1,0 +1,41 @@
+<h2>Create New Teacher Details :</h2>
+
+<form action="/teacher" method="POST">
+    <table>
+        <tr>
+            <th><label>Name</label></th>
+            <th><input type="text" name="name"></input></th>
+        </tr>
+        <tr>
+            <th><label>EmpId</label></th>
+            <th><input type="text " name="empid"/></th>
+        </tr>
+        <tr>
+            <th><label>Type</label></th>
+            <th>
+                <select name="type">
+                    <option>Teachering Staff</option>
+                    <option>Non-Teachering Staff</option>
+                </select>
+             </th>
+        </tr>
+    
+        <tr>
+            <th><label>Categories</label></th>
+            <th>
+                <select name="categories">
+                    <option> Aided</option>
+                    <option>Self-Finance</option>
+                </select>
+             </th>
+        </tr>
+        <tr>
+            <th><label>DOB</label></th>
+            <th><input type="date" name="dob"/></th>
+        </tr>
+    
+    </table>
+    <input type="submit"/>
+
+</form>
+

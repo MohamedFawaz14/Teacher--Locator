@@ -1,0 +1,25 @@
+<h1>Assign Time Table Schedule.</h1>
+
+<form action ="/timeTable" method="POST">
+    <select name="teacher">
+    <% teachers.forEach(teacher => { %>
+        <option label = "<%= teacher.name %>" value="<%=teacher.id%>"></option>
+    <% }) %>
+    </select>
+    
+    <h3>Day 1</h3>
+    <label>period 1</label>
+    <input name="day1Period1"/><br>
+    <label>period 2</label>
+    <input name="day1period2"/>
+    
+    <h3>Day 2</h3>
+    <label>period 1</label>
+    <input name="day2Period1"/><br>
+    <label>period 2</label>
+    <input name="day2period2"/>
+
+    <br>
+     <input type="submit"/>
+
+</form>
