@@ -2,6 +2,8 @@
 
 <% teachers.forEach(teacher => { %>
     <h2><%= teacher.name %></h2>
+    <button><a href="teacher/<%=teacher.id%>/edit">Update</a></button>
+    <button ><a href="teacher/<%=teacher.id%>/delete" >Delete</a></button>
     <%
     const teacherTimeTable = timeTable.find(t => t.teacher == teacher.id) 
     %>

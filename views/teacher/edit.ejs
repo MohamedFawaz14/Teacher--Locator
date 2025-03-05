@@ -1,0 +1,53 @@
+<h2>Edit Page !</h2>
+<form action="/teacher/<%=teacher.id%>?_method=PUT" method="POST">
+    <table>
+        <tr>
+            <th><label>Name</label></th>
+            <th><input type="text" name="name" value="<%=teacher.name%>"></input></th>
+        </tr>
+        <tr>
+            <th><label>EmpId</label></th>
+            <th><input type="text" name="empid" value="<%=teacher.empId%>"/></th>
+        </tr>
+        <tr>
+            <th><label>Type</label></th>
+            <th>
+                <select name="type">
+                    <option>Teachering Staff</option>
+                    <option>Non-Teachering Staff</option>
+                </select>
+             </th>
+        </tr>
+    
+        <tr>
+            <th><label>Categories</label></th>
+            <th>
+                <select name="categories">
+                    <option> Aided</option>
+                    <option>Self-Finance</option>
+                </select>
+             </th>
+        </tr>
+        <tr>
+            <th><label>DOB</label></th>
+            <th><input type="date" name="dob" value="teacher.dob"/></th>
+        </tr>
+    
+    </table>
+        
+        <h3>Day 1</h3>
+        <label>period 1</label>
+        <input name="day1period1" value="<%=timeTable.day1period1%>"/><br>
+        <label>period 2</label>
+        <input name="day1period2"value="<%=timeTable.day1period2%>"/>
+        
+        <h3>Day 2</h3>
+        <label>period 1</label>
+        <input name="day2period1" value="<%=timeTable.day2period1%>"/><br>
+        <label>period 2</label>
+        <input name="day2period2" value="<%=timeTable.day2period2%>"/>
+<br>
+<br>
+    <input type="submit"/>
+
+</form>
