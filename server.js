@@ -19,7 +19,7 @@ app.use(methodOverride('_method'))
 
 
 const mongoose = require('mongoose')
-mongoose.connect("mongodb://localhost:27017/teacher")
+mongoose.connect("mongodb+srv://mohamedfawazsb:gN_jsmWdpZYz7%40j@cluster0.krjoy.mongodb.net/")
 .then(()=>console.log("connected to mongodb"))
 .catch(()=>console.log("Failed to connect mongodb"))
 
